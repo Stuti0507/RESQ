@@ -39,7 +39,7 @@ body
     width: 8rem;
     display: flex;
     position: relative;
-    right: 19rem;
+    right: 20rem;
     align-items: center;
 }
 #logo h1
@@ -93,7 +93,7 @@ background-color:transparent ;
     align-items: center;
     flex-direction: column;
    scrollbar-width: none;
-   background-image: url("./assets/pics/mappp.png");
+   background-image: url("./assets/pics/mapppp.jpeg");
    /* background-size: 100rem;
    background-position-y: 0rem;
    background-position-x: -8rem;
@@ -133,9 +133,9 @@ background-color:transparent ;
 {
     font-size: x-large;
     border: none;
-    padding:0.5rem ;
+    padding:0.7rem ;
     background-color: rgb(90, 153, 247);
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     color: azure;
     box-shadow: 0px 0px 0px 2px rgb(32, 125, 247);
 }

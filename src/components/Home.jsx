@@ -37,7 +37,7 @@ const Home = () => {
         <div id="contact" className='box'>
         <h1 >Call for help</h1>
         <p>Need assistance? Contact emergency services immediately.</p>
-        <button>Get Help Now</button>
+        <button onClick={()=>{alert("Help is arriving"); }}>Get Help Now</button>
         </div>
       </div>
     </div>
