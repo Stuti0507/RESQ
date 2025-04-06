@@ -1,0 +1,612 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#root
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(227, 227, 231);
+}
+#Nav
+{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 400;
+    background-color: rgba(51, 48, 231, 0.8);
+     background-image: linear-gradient(to right,rgb(9, 9, 192,0.2),rgb(50, 28, 146,0.5));
+}
+#logo
+{
+    height: 90%;
+    width: 8rem;
+    display: flex;
+    position: relative;
+    right: 19rem;
+    align-items: center;
+}
+#logo h1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#redd
+{
+    color: rgb(240, 17, 17);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navcon
+{
+   text-decoration: none;
+   font-size: x-large;
+   color: azure;
+   margin-right: 5rem;
+   text-shadow: 2px 2px 2px rgb(116, 117, 117);
+
+}
+.bnav
+{
+   padding: 0.4rem;
+   margin-top: 0rem;
+   transition-duration: 0.1s;
+   transition-timing-function: steps(2);
+    border-bottom:  0.2rem solid  rgb(255, 255, 255)  ;
+  
+}
+#navcon:hover
+{
+    transform: scale(1.05);
+    transition-duration: 0.26s;
+    color: rgb(255, 255, 255);
+    transition-timing-function: ease-in-out;
+}
+.sonav
+{
+
+height: 10vh;
+background-color:transparent ;
+}
+
+#Home
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   scrollbar-width: none;
+   background-image: url("./assets/pics/mappp.png");
+   /* background-size: 100rem;
+   background-position-y: 0rem;
+   background-position-x: -8rem;
+   background-repeat: no-repeat; */
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 0rem;
+    background-position-y:4rem ;
+    background-size: 90rem;
+    background-color: rgb(16, 150, 207);
+}
+#latest
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+    padding: 7rem;
+    background-color: rgba(17, 7, 26, 0.6) ;
+    border-radius: 1rem; 
+    color: azure;
+}
+#latest h1
+{
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+#latest p
+{
+    font-size: large;
+    margin-bottom: 2rem;
+}
+#latest button
+{
+    font-size: x-large;
+    border: none;
+    padding:0.5rem ;
+    background-color: rgb(90, 153, 247);
+    border-radius: 1rem;
+    color: azure;
+    box-shadow: 0px 0px 0px 2px rgb(32, 125, 247);
+}
+#foot
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2rem;
+    background-color: rgb(223, 223, 231,0.9);
+    padding: 3rem;
+}
+.box
+{
+    height: fit-content;
+    width: 24%;
+    margin-right: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.inner
+{
+    display: flex;
+    margin-top: 0.3rem;
+}
+.inner h4
+{
+    margin-right: 0.3rem;
+}
+#info
+{
+    background-color: azure;
+
+}
+#info h1
+{
+font-size: x-large;
+margin-bottom: 0.4rem;
+}
+#update
+{
+    background-color: azure;
+  
+}
+#update h1
+{
+    font-size: x-large;
+    margin-bottom: 0.4rem;
+}
+#contact
+{
+    background-color: rgb(238, 16, 83);
+    padding: 0.8rem;
+    width: 24%;
+}
+#contact h1
+{
+    font-size: x-large;
+    color: azure;
+    margin-bottom: 0.4rem;
+}
+#contact p
+{
+    color: azure;
+margin-bottom: 0.5rem;
+margin-right: 1rem;
+}
+#contact button
+{
+    padding: 0.5rem;
+    width: 44%;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: rgb(143, 139, 139);
+    background-color: azure;
+    border: none;
+}
+#SOS
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(238, 15, 15), rgb(247, 27, 63));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+    scrollbar-width: none;
+}
+#buttonsos
+{
+width: 32vw;
+height: 60vh;
+background-color: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@keyframes buttonn
+{
+    from
+    {
+        box-shadow: 0px 0px 0px 10px rgba(243, 243, 243, 0.35),0px 0px 0px 20px rgba(241, 238, 238, 0.3),0px 0px 0px 30px rgba(248, 138, 138, 0.2);          
+
+    }
+   to
+   {
+    box-shadow: 0px 0px 0px 10px rgba(247, 164, 164, 0.1),0px 0px 0px 20px rgba(247, 52, 52, 0.3),0px 0px 0px 30px rgba(189, 74, 74, 0.3);          
+
+   }
+}
+#buttonsos button
+{
+width: 50%;
+height: 50%;
+margin-top: 6rem;
+border-radius: 50%;
+background-color: rgb(252, 246, 246);
+font-size: 4rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(248, 33, 69);
+border: 1rem solid rgb(255, 241, 241);
+text-shadow: 3px 3px 4px rgb(153, 2, 2);
+box-shadow: 0px 0px 0px 10px rgba(243, 243, 243, 0.35),0px 0px 0px 20px rgba(241, 238, 238, 0.3),0px 0px 0px 30px rgba(245, 150, 150, 0.2);          
+}
+#buttonsos button:hover
+{
+    animation-name: buttonn;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate;
+}
+#sosextra
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: fit-content;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+#sosextra h1
+{
+    color: rgb(255, 251, 251);
+    text-align: center;
+    text-wrap: wrap;
+    width: 99%;
+    height: 90%;
+    padding: 1rem;
+    text-align: center;
+}
+#sosafter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+#sosafter div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+#emt
+{
+    height: 4rem;
+    width: 80%;
+    overflow: scroll;
+    font-size: x-large;
+    text-wrap: wrap;
+    padding: 2rem;
+
+    
+    background-color: rgb(247, 93, 93);
+}
+#Vol
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    background-color: rgb(202, 13, 92);
+}
+#Volunter
+{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+
+    padding: 7rem;
+    padding-right: 1rem;
+    color: azure;
+    background-color: rgb(12, 6, 6);
+}
+#cont
+{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 3rem;
+}
+#join
+{
+    height: 2.3rem;
+    width: 30%;
+    margin-bottom: 1rem;
+    background-color: rgb(73, 58, 58);
+    border: none;
+    color: azure;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    font-size: large;
+    text-align: center;
+}
+#join::before
+{
+    content: "# ";
+    font-size: 1.2rem;
+    color: rgb(61, 253, 61)
+}
+#cont h1
+{
+    font-size: 4.6rem;
+}
+#midh1
+{
+    color: rgb(68, 241, 68);
+}
+#loginv
+{
+    margin-top: 1rem;
+    display: flex;
+}
+#started
+{
+    height: 3rem;
+    width: 40%;
+    margin-right: 2rem;
+    background-image: linear-gradient(to bottom,rgb(11, 11, 250),rgb(52, 33, 218));
+    color: azure;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border: 1px azure solid;
+    text-align: center;
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+#loginv a
+{
+    color: azure;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    font-size: large;
+}
+#imgg
+{
+margin-left: auto;
+height: 30rem;
+width: 40rem;
+background-position-y: 0.7rem;
+background-size: 30rem;
+background-repeat: no-repeat;
+background-image: url("./assets/pics/volunteer.jpeg");
+}
+#donation
+{
+    height: 107rem;
+    background-color: azure;
+}
+#tagline
+{
+    font-size: 6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:65%;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+#donate
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: azure;
+    box-shadow: 0px 0px 10px 2px black;
+    border: 2px solid rgb(197, 191, 191);
+    position: relative;
+    top: -23rem;
+    left: 56rem;
+    width: 30%;
+    height: 27rem;
+    z-index: 30;
+}
+#donate h1
+{
+
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#readycheck
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin-top: 2rem;
+}
+#readycheck button
+{
+    margin-right: 0.5rem;
+    margin-bottom: 0.8rem;
+    width: 30%;
+    font-size: large;
+    height: 3rem;
+    font-weight: bold;
+    background-color: azure;
+    border: none;
+    border: 2px solid rgb(179, 162, 162);
+}
+#readycheck button:hover
+{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid;
+}
+#donate input
+{
+    width: 95%;
+    height: 2rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 0px 1px ;
+    padding-left: 1rem;
+    font-size: large;
+    border: 1px solid rgb(160, 146, 146);
+}
+#butdonn
+{
+    color: azure;
+    background-color: rgb(35, 231, 156);
+    text-align: left;
+    padding-left: 1rem;
+    width: 95%;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    height: 3rem;
+    margin-top: 2rem;
+    
+}
+#imgd
+{
+    background-image: url("./assets/pics/donate1.jpeg");
+    width: 100vw;
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -25rem;
+    
+}
+#Map
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 36, 26);
+}
+.leaflet-container
+{
+    height: 100%;
+    width: 100%;
+
+}
+#mapp
+{
+    height: 100vh;
+    width: 100vw;
+    margin-top:8.8rem;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+}
+#guide
+{
+    width: 30vw;
+    height: 31rem;
+    margin-left: 50%;
+    position: absolute;
+    right: 1rem;
+    top: 10rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px ;
+    z-index: 5;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom:0rem ;
+
+}
+#guide h1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+#guide p
+{
+    font-size: 1.3rem;
+}
+#bot
+{
+    background-image: url("./assets/pics/robot.png");
+    width: 46%;
+    height: 40%;
+    background-size: 11rem;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+#chat
+{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: fit-content;
+    padding: 0rem;
+}
+#chatbox
+{
+    height: 90%;
+    width: 25vw;
+    border-radius: 2rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius:0rem ;
+    background-color: rgb(234, 234, 240);
+    box-shadow: inset 1px 1px 0px 1px rgb(168, 173, 173) ;
+}
+#inpp
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#inpp input
+{
+width: 80%;
+height: 2rem;
+border-bottom-left-radius:1rem ;
+padding-left: 1rem;
+}
+#inpp button
+{
+    height: 2rem;
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    background-color: rgb(23, 202, 53);
+    border-bottom-right-radius:1rem ;
+    border: none;
+}
